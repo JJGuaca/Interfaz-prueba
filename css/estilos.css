@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body{
+	font-family: 'Acme', sans-serif;
+	background-color: rgb(255, 255, 255,.2);
+	margin: 0;
+}
+.presentacion{
+	background-color: rgb(162, 163, 162,.2);
+    padding: 3rem;
+}
+.contenedor{
+	width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.logo>img{
+	background-color: #fff; 
+	width: 100%;
+	height: 50px;
+}
+.contenido-header{
+	font-family: sans-serif;
+	font-weight: 100;
+	color: #fff;
+}
+.contenido-header>span{
+	font-size: 90%;
+    padding: 10px 0px;
+}
+.contenido-header>.inscripcion>button{
+	color: #b0162e;
+    font-weight: 900;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+    width: 130px;
+    height: 40px;
+}
+.contenido-header>.inscripcion>button:hover{
+	color: #fff;
+    background-color:  #b0162e;
+    border-color: #fff;
+}
+
+.contenido{
+	display: inline-flex;
+}
+.contenido>.formulario{
+	width: 50%;
+}
+
+.contenido>.texto{
+	width: 50%;
+	text-align: justify;
+	margin: 0px 20px;
+    padding: 10px;
+    font-size: 120%;
+    font-family: sans-serif; 
+}
+.contenido>.texto>p{
+	color: #6e706e;
+    font-size: 15px;
+    text-align: left;
+    margin: 2rem 7rem 2rem 0rem;
+}
+.texto>span{
+	display: inline-flex;
+    justify-content: end;
+}
+.texto>span>i{
+	background-color: #bf0000;
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    padding: 5px;
+}
+.formulario>h4{
+	text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 20px 0px;
+    padding: 10px 0px;
+}
+form{
+	width: 100%;
+	padding: 16px;
+	margin: auto;
+}
+form input[type="text"],form input[type="email"]{
+	display: inline-block;
+    width: 85%;
+    padding: 3px 20px;
+    margin: 10px auto;
+    border: none;
+    background-color: #f6f6f6;
+    height: 25px;
+}
+form input[type="submit"]{
+	width: 100px;
+    border: none;
+    height: 38px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #cd0000;
+    cursor: pointer;
+    margin-left: 74%;
+    margin-top: 13px;
+}
+
+
+header{
+	background-image: url(https://www.baccredomatic.com/themes/custom/bac_theme/images/footer-background.jpg);
+    filter: contrast(160%);
+    background-repeat:repeat;
+    background-position: center;
+    background-size: 100%;
+    font-weight: 100;
+    text-align: center;
+    background-size: contain;
+}
+
+footer{
+	font-weight: 300;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 13px;
+    color: #acabab;
+    margin-top: 30px;
+    padding-top: 30px; 
+}
+
+.inscripcion{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px;
+    padding: 20px 0px;
+}
+button{
+	color: #007bff;
+    border-color: #007bff;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid;
+    box-shadow: inset 0 1px 0 0 rgb(255, 255, 255,.4);
+    cursor: pointer;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+    width: 100px;
+    height: 40px;
+}
+button:hover{
+	color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+span>a{
+	text-decoration: none;
+}
+
+#mensaje-err{
+    justify-content: end;
+    position: relative;
+    left: 25%;
+}
+#mensaje-err>i{
+	background-color: #bf0000;
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    padding: 10px;
+}
+#mensaje-err>span{
+	display: inline-flex;
+    margin: 5px;
+}
+#mensaje-ok{
+    justify-content: end;
+    position: relative;
+    left: 25%;
+}
+#mensaje-ok>i{
+	background-color: #4caf50;
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    padding: 10px;
+}
+#mensaje-ok>span{
+	display: inline-flex;
+    margin: 5px;
+}
+.err{
+	display: none;
+}
+.ok{
+	display: flex;
+}
+
+
+
+/*DISPOSITIVOS TABLETS*/
+@media screen and (max-width: 768px){
+	.contenido{
+		display: inline-grid;
+	}
+	.contenido-header>h3{
+		font-size: 20px;
+	}
+	.contenido-header>span{
+		font-size: 15px;
+		margin: 0px 10px;
+	}
+	.contenido>.formulario{
+	 	width: 100%;
+	 	border-top: 1px solid rgb(117, 117, 117,.5);
+	}
+	.formulario>h4{
+    	margin-top: 20px;
+    	padding-top: 20px;
+	}
+	form{
+		width: 100%;
+		padding: 0;
+   		margin: auto;
+	}
+	form input[type="submit"]{
+		margin-left: 70%;
+	}
+	.contenido>.texto{
+		width: 100%;
+		margin: 5px 0px;
+   		padding: 10px 0px;
+	}
+	.contenido>.texto>h2{
+		margin-top: 10px;
+	}
+	.contenido>.texto>p{
+		font-size: 12px;
+   		 text-align: justify;
+    	margin: 20px 0px;
+    	padding: 10px 1px;
+	}
+	.contenido>.texto>h2{
+
+	}
+	.presentacion{
+		padding: 1rem 1rem;
+	}
+	#mensaje-ok {
+ 	   justify-content: end;
+    	position: relative;
+    	left: 10%;
+	}
+	#mensaje-err {
+ 	   justify-content: end;
+    	position: relative;
+    	left: 10%;
+	}
+	
+	
+}
+
+
+/*DISPOSITIVOS MOVILES*/
+@media screen and (max-width: 320px){
+	.contenido{
+		display: inline-grid;
+	}
+	.contenido-header>span{
+		font-size: 12px;
+		margin: 0px 10px;
+	}
+	.contenido>.formulario{
+	 	width: 100%;
+	 	border-top: 1px solid rgb(117, 117, 117,.5);
+	}
+	.formulario>h4{
+    	margin-top: 20px;
+    	padding-top: 20px;
+	}
+	form{
+		width: 100%;
+		padding: 0;
+   		margin: auto;
+	}
+	form input[type="submit"]{
+		margin-left: 60%;
+	}
+	.contenido>.texto{
+		width: 100%;
+		margin: 5px 0px;
+   		padding: 10px 0px;
+	}
+	.contenido>.texto>h2{
+		margin-top: 10px;
+	}
+	.contenido>.texto>p{
+		font-size: 12px;
+   		 text-align: justify;
+    	margin: 20px 0px;
+    	padding: 10px 1px;
+	}
+	.contenido>.texto>h2{
+
+	}
+	.presentacion{
+		padding: 1rem 1rem;
+	}
+	#mensaje-ok {
+ 	   justify-content: end;
+    	position: relative;
+    	left: 5%;
+	}
+	#mensaje-err {
+ 	   justify-content: end;
+    	position: relative;
+    	left: 5%;
+	}
+	
+}
