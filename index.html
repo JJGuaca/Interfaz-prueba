@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HOME | Interfaz</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="shortcut icon" href="https://www.baccredomatic.com/themes/custom/bac_theme/favicon.ico" type="image/vnd.microsoft.icon">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+				<img src="https://www.baccredomatic.com/sites/default/files/2020-10/servicios-bac-credomatic.svg" alt="">
+			</div>
+			<div class="contenido-header">
+				<h3>Tu banco en la palma de tu mano.</h3>
+				<span>Revisar el saldo de tus cuentas, realizar pagos y transferencias o configurar tus tarjetas de crédito, nunca había sido tan fácil.</span>
+				<div class="inscripcion">
+					<button>Conocer más</button>
+				</div>
+			</div>
+		</header>
+		<section class="presentacion">
+			<div class="contenido">				
+				<div class="texto">
+					<h2>Banca Móvil</h2>
+					<p>Viva la experiencia de la nueva Banca Móvil, antes de que esté disponible para todo nuestros clientes, al darte de alta por medio de este formulario. Verás el detalle de la aplicación, detalle de ctualizaciones, cómo se diseñó y mucho más.</p>
+					<span><i class="fab fa-apple"></i></span>
+					<span><i class="fab fa-android"></i></span>
+					
+				</div>				
+				<div class="formulario">
+					<h4>- Darse de alta -</h4>
+					<span id="mensaje-err" class="err">
+						<i class="fas fa-times"></i>
+						<span>Error al enviar el formulario.</span>
+					</span>
+					<span id="mensaje-ok" class="err">
+						<i class="fas fa-check"></i>
+						<span>Formulario enviado con exito.</span>
+					</span>
+
+					<form action="" method="post" id="formulario"  onsubmit="return false">
+
+						<input type="text" name="nombre" id="nombre" placeholder="Nombres y Apellidos" required>
+						<input type="email" name="correo" id="correo" placeholder="Correo electónico" required>
+						<input type="submit" value="Enviar" onclick="validar()">
+					</form>
+				</div>
+				
+			</div>			
+		</section>
+		<footer>
+			<div class="redes"></div>
+			<div class="contacto">
+				<span>Todos los derechos reservados. 2018  &copy; BAC Credomatic International Bank.</span><br>
+				<span>2021 - JJGuaca</span>
+			</div>
+		</footer>
+
+	</div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>
